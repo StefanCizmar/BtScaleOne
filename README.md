@@ -1,2 +1,2 @@
-# chipsea-ble-lib
-chipsea-ble-lib
+# BtScaleOne
+App for communucation with chipsea-BLE devices
