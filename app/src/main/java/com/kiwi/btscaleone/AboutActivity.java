@@ -90,7 +90,7 @@ public class AboutActivity   extends AppCompatActivity implements  View.OnClickL
                     break;
                 }
                 case Configuration.UI_MODE_NIGHT_YES:{
-                    Log.i("MODE", " DARK");
+                    Log.i("MODE ", " DARK");
 
                     ll_a.setBackgroundResource(R.drawable.shadow_dark);
                     app_version.setTextColor(Color.WHITE);
