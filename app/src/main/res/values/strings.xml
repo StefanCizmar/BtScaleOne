@@ -151,7 +151,7 @@
     <string name="save_database">Database backup</string>
     <string name="recovery_database">Database recovery</string>
     <string name="whole">Whole</string>
-    <string name="appinfo">"\\tApplication for displaying body data from personal scales.\nCommunicates with Esperanza devices and others with the Chipsea-BLE protocol. Unlike other similar applications, the application has a local database with the possibility of backup. No server registration. "</string>
+    <string name="appinfo">"\\tApplication for displaying body data from personal scales.\nCommunicates with Esperanza devices and others with the Chipsea-BLE protocol. Unlike other similar applications, the application has a local database with the possibility of backup. No server registration.Uses custom formulas. "</string>
     <string name="copyright">2021 Stefan Cizmar</string>
     <string name="email">Feedback</string>
     <string name="more">More</string>

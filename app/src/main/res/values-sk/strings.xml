@@ -130,7 +130,7 @@
     <string name="whole">Celok</string>
     <string name="email">Spätná väzba</string>
     <string name="more">Viac</string>
-    <string name="appinfo">\tAplikácia na zobrazenie telesných údajov z osobnej váhy.\nKomunikuje zo zariadeniami značky Esperanza a inými s protokolom Chipsea-BLE. Na rozdiel od iných podobných aplikácií má aplikácia lokálnu databázu z možnosťou zálohovania. Bez registrácie na servery.</string>
+    <string name="appinfo">\tAplikácia na zobrazenie telesných údajov z osobnej váhy.\n\tKomunikuje zo zariadeniami značky Esperanza a inými s protokolom Chipsea-BLE. Na rozdiel od iných podobných aplikácií má aplikácia lokálnu databázu z možnosťou zálohovania. Bez registrácie na servery. Používa vlastné vzorce.</string>
     <string name="insert_text">Vlož text.</string>
     <string name="copyright">2021 Štefan Čižmár</string>
     <string name="delete_history_item">Dlhým klepnutím na položku odstránite položku</string>
