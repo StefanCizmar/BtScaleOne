@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Osobní váha</string>
+    <string name="copyright">2021 Štefan Čižmár</string>
+    <string name="scanner_action_scan">hledat</string>
+    <string name="scanner_title">"Vyberte zařízení: "</string>
+    <string name="scanner_empty">"Nenašlo se žádné zařízení "</string>
+    <string name="scanner_action_cancel">Zrušit</string>
+    <string name="start_scan">Skenovat</string>
+    <string name="disconnect">Odpojit</string>
+    <string name="unbound">"Uvolnit zařízení "</string>
+    <string name="not_support_ble">"Zařízení nepodporuje BLE! "</string>
+    <string name="male">Muž</string>
+    <string name="female">Žena</string>
+    <string name="age">Věk:</string>
+    <string name="height">Výška:</string>
+    <string name="weight">"Hmotnost: "</string>
+    <string name="adc">"Impedance: "</string>
+    <string name="temp">Teplota.: %1$d</string>
+    <string name="default_temp">Teplota: &#8212;</string>
+    <string name="state_connected">"Připojené zařízení: %1$s "</string>
+    <string name="state_bound">Vázané zařízení: %1$s</string>
+    <string name="state_disconnected">Zařízení odpojeno</string>
+    <string name="state_service_discovered">"Služba objevena "</string>
+    <string name="state_indication_success">Úspěch</string>
+    <string name="state_time_out">"Časový limit připojení "</string>
+    <string name="state_connecting">"Připojuje se&#8230; "</string>
+    <string name="state_error">"Abnormální připojení, neobvyklé informace: %1$s; error code: %2$d "</string>
+    <string name="settings_status">Stav: %1$s</string>
+</resources>

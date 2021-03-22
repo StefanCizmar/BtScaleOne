@@ -33,7 +33,7 @@
 
     <string name="temp">Temp.: %1$d</string>
     <string name="default_value" translatable="false">--</string>
-    <string name="default_weight">&#8212;</string>
+    <string name="default_weight" translatable="false">&#8212;</string>
     <string name="default_temp">Temperature: &#8212;</string>
 
     <string name="state_connected">Connected device: %1$s</string>

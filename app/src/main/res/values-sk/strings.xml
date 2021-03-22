@@ -7,7 +7,6 @@
     <string name="height">Výška:</string>
     <string name="weight">Hmotnosť:</string>
     <string name="temp">Teplota.: %1$d</string>
-    <string name="default_weight">&#8212;</string>
     <string name="default_temp">Teplota: &#8212;</string>
     <string name="state_connected">Pripojené zariadenie: %1$s</string>
     <string name="state_bound">Viazané zariadenie: %1$s</string>
