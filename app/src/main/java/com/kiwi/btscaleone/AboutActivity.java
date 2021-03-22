@@ -28,6 +28,8 @@ public class AboutActivity   extends AppCompatActivity implements  View.OnClickL
 
     private LinearLayout ll_a;
 
+
+
     private TextView app_version;
     private TextView tv_Info;
     private TextView tv_c;
