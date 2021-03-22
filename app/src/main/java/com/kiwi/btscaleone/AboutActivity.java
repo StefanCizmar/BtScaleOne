@@ -80,7 +80,7 @@ public class AboutActivity   extends AppCompatActivity implements  View.OnClickL
                     & Configuration.UI_MODE_NIGHT_MASK;
             switch (currentNightMode) {
                 case Configuration.UI_MODE_NIGHT_NO: {
-                    Log.i("MODE4", " LIGHT");
+                    Log.i("MODE ", " LIGHT");
 
                     ll_a.setBackgroundResource(R.drawable.shadow_light);
                     app_version.setTextColor(Color.BLACK);
@@ -90,7 +90,7 @@ public class AboutActivity   extends AppCompatActivity implements  View.OnClickL
                     break;
                 }
                 case Configuration.UI_MODE_NIGHT_YES:{
-                    Log.i("MODE4", " DARK");
+                    Log.i("MODE ", " DARK");
 
                     ll_a.setBackgroundResource(R.drawable.shadow_dark);
                     app_version.setTextColor(Color.WHITE);
