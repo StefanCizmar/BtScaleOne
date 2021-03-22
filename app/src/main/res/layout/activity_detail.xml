@@ -1,0 +1,278 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/appbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+
+
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="?attr/colorPrimary"
+            app:popupTheme="@style/AppTheme.PopupOverlay" >
+
+        </android.support.v7.widget.Toolbar>
+    </android.support.design.widget.AppBarLayout>
+
+
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="@dimen/activity_horizontal_margin"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/colorBblue"
+            android:orientation="vertical"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <LinearLayout
+                    android:id="@+id/ll_d"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/shadow_light"
+                    android:orientation="vertical">
+
+                    <TableLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <TableRow
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:paddingTop="5sp"
+                            android:paddingBottom="5sp">
+
+                            <ImageView
+                                android:id="@+id/ivWeight"
+                                android:layout_width="wrap_content"
+                                android:layout_height="50sp"
+                                android:layout_weight="1"
+                                app:srcCompat="@drawable/re_weight" />
+
+                            <TextView
+                                android:id="@+id/dWeight"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center|fill_horizontal"
+                                android:layout_weight="1"
+                                android:text="@string/re_weight"
+                                android:textColor="@color/colorBlack"
+                                android:textSize="18sp" />
+
+                            <TextView
+                                android:id="@+id/dvWeight"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_vertical"
+                                android:layout_weight="2"
+                                android:text="75.3"
+                                android:textColor="@color/colorBlack"
+                                android:textSize="18sp" />
+                        </TableRow>
+
+                        <TableRow
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:paddingTop="5sp"
+                            android:paddingBottom="5sp">
+
+                            <ImageView
+                                android:id="@+id/ivBmi"
+                                android:layout_width="wrap_content"
+                                android:layout_height="50sp"
+                                android:layout_gravity="center_vertical"
+                                android:layout_weight="1"
+                                app:srcCompat="@drawable/re_bmi" />
+
+                            <TextView
+                                android:id="@+id/dBmi"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_vertical"
+                                android:layout_weight="1"
+                                android:text="@string/re_bmi"
+                                android:textColor="@color/colorBlack"
+                                android:textSize="18sp" />
+
+                            <TextView
+                                android:id="@+id/dvBmi"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_vertical"
+                                android:layout_weight="2"
+                                android:text="22.3"
+                                android:textColor="@color/colorBlack"
+                                android:textSize="18sp" />
+                        </TableRow>
+
+                        <TableRow
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:paddingTop="5sp"
+                            android:paddingBottom="5sp">
+
+                            <ImageView
+                                android:id="@+id/ivBfr"
+                                android:layout_width="wrap_content"
+                                android:layout_height="50sp"
+                                android:layout_gravity="center_vertical"
+                                android:layout_weight="1"
+                                app:srcCompat="@drawable/re_bfr" />
+
+                            <TextView
+                                android:id="@+id/dBfr"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_vertical"
+                                android:layout_weight="1"
+                                android:text="@string/re_fat"
+                                android:textColor="@color/colorBlack"
+                                android:textSize="18sp" />
+
+                            <TextView
+                                android:id="@+id/dvBfr"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_vertical"
+                                android:layout_weight="2"
+                                android:text="25.3"
+                                android:textColor="@color/colorBlack"
+                                android:textSize="18sp" />
+                        </TableRow>
+
+                        <TableRow
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:paddingTop="5sp"
+                            android:paddingBottom="5sp">
+
+                            <ImageView
+                                android:id="@+id/ivTHR"
+                                android:layout_width="wrap_content"
+                                android:layout_height="50sp"
+                                android:layout_gravity="center_vertical"
+                                android:layout_weight="1"
+                                app:srcCompat="@drawable/re_water" />
+
+                            <TextView
+                                android:id="@+id/dThr"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_vertical"
+                                android:layout_weight="1"
+                                android:text="@string/re_water"
+                                android:textColor="@color/colorBlack"
+                                android:textSize="18sp" />
+
+                            <TextView
+                                android:id="@+id/dvThr"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_vertical"
+                                android:layout_weight="2"
+                                android:text="56.3"
+                                android:textColor="@color/colorBlack"
+                                android:textSize="18sp" />
+                        </TableRow>
+
+                        <TableRow
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:paddingTop="5sp"
+                            android:paddingBottom="5sp">
+
+                            <ImageView
+                                android:id="@+id/ivSlm"
+                                android:layout_width="wrap_content"
+                                android:layout_height="50sp"
+                                android:layout_gravity="center_vertical"
+                                android:layout_weight="1"
+                                app:srcCompat="@drawable/re_muscle" />
+
+                            <TextView
+                                android:id="@+id/dSlm"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_vertical"
+                                android:layout_weight="1"
+                                android:text="@string/re_muscle"
+                                android:textColor="@color/colorBlack"
+                                android:textSize="18sp" />
+
+                            <TextView
+                                android:id="@+id/dvSlm"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_vertical"
+                                android:layout_weight="2"
+                                android:text="35.3"
+                                android:textColor="@color/colorBlack"
+                                android:textSize="18sp" />
+                        </TableRow>
+
+                        <TableRow
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:paddingTop="5sp"
+                            android:paddingBottom="5sp">
+
+                            <ImageView
+                                android:id="@+id/ivBmr"
+                                android:layout_width="wrap_content"
+                                android:layout_height="50sp"
+                                android:layout_gravity="center_vertical"
+                                android:layout_weight="1"
+                                app:srcCompat="@drawable/re_calorie" />
+
+                            <TextView
+                                android:id="@+id/dBmr"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_vertical"
+                                android:layout_weight="1"
+                                android:text="@string/re_bmr"
+                                android:textColor="@color/colorBlack"
+                                android:textSize="18sp" />
+
+                            <TextView
+                                android:id="@+id/dvBmr"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_vertical"
+                                android:layout_weight="2"
+                                android:text="2200"
+                                android:textColor="@color/colorBlack"
+                                android:textSize="18sp" />
+                        </TableRow>
+                    </TableLayout>
+                </LinearLayout>
+            </ScrollView>
+
+        </LinearLayout>
+    </android.support.constraint.ConstraintLayout>
+
+
+
+
+</android.support.design.widget.CoordinatorLayout>

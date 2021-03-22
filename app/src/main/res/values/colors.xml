@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="colorPrimary">#2196f3</color>
+    <color name="colorPrimaryDark">#2196f3</color>
+    <color name="colorAccent">#2196f3</color>
+
+    <color name="colorBlack">#000000</color>
+    <color name="colorWhite">#FFFFFF</color>
+
+    <color name="colorWeight">#52ad1d</color>
+    <color name="colorBMI">#e6b522</color>
+    <color name="colorBFR">#1dad81</color>
+    <color name="colorTHR">#1d41ad</color>
+    <color name="colorSLM">#ad1d26</color>
+    <color name="colorBMR">#821dad</color>
+
+    <color name="colorBblue">#2196f3</color>
+    <color name="colorBcyan">#52ad1d</color>
+    <color name="colorBpink">#6d4c41</color>
+    <color name="colorBgreen">#821dad</color>
+
+</resources>

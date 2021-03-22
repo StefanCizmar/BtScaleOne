@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/iv_result"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:padding="5sp"
+        android:paddingStart="10sp"
+        app:srcCompat="@drawable/ic_action_scale" />
+
+    <TextView
+        android:id="@+id/tv_result_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center|center_horizontal"
+        android:layout_weight="3"
+        android:padding="5sp"
+        android:text="result"
+        android:textAlignment="textStart"
+        android:textSize="18sp"
+        tools:ignore="RtlCompat" />
+
+    <TextView
+        android:id="@+id/tv_result_value"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center|end"
+
+        android:layout_weight="1"
+        android:padding="5sp"
+        android:paddingEnd="40sp"
+        android:text="Value"
+        android:textAlignment="textEnd"
+        android:textSize="18sp"
+        tools:ignore="RtlCompat" />
+
+</LinearLayout>

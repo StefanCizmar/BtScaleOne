@@ -1,0 +1,266 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/ll_ha"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/shadow_light">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:scrollbars="horizontal">
+
+            <ImageView
+                android:id="@+id/ivHUser"
+                android:layout_width="25sp"
+                android:layout_height="match_parent"
+                app:srcCompat="@drawable/ic_action_user_m" />
+
+            <ImageView
+                android:id="@+id/ivDelete"
+                android:layout_width="15sp"
+                android:layout_height="match_parent"
+                app:srcCompat="@android:drawable/ic_delete" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="5sp">
+
+                <TextView
+                    android:id="@+id/hisDate"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center|center_horizontal"
+                    android:text="2.1.2021"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="10sp" />
+
+                <TextView
+                    android:id="@+id/hisTime"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+
+                    android:text="7:35:34"
+                    android:textAlignment="center"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="10sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:padding="5sp">
+
+                <TextView
+                    android:id="@+id/hvWei"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+
+                    android:text="75.3"
+                    android:textAlignment="center"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/tvWei2"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+
+                    android:text="@string/unit_kg"
+                    android:textAlignment="center"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:id="@+id/hWei"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/re_weight"
+                    android:textAlignment="center"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="12sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:padding="5sp">
+
+                <TextView
+                    android:id="@+id/hvBMI"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+
+                    android:text="20.9"
+                    android:textAlignment="center"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/thBMI"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text=" "
+                    android:textAlignment="center"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:id="@+id/hBMI"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+
+                    android:text="@string/re_bmi"
+                    android:textAlignment="center"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="12sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:padding="5sp">
+
+                <TextView
+                    android:id="@+id/hvBFR"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="23.5"
+                    android:textAlignment="center"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/tvPerc"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="%"
+                    android:textAlignment="center"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:id="@+id/hBFR"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="@string/re_fat"
+                    android:textAlignment="center"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="12sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:padding="5sp">
+
+                <TextView
+                    android:id="@+id/hvTHR"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="55.2"
+                    android:textAlignment="center"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/tvPerc2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="%"
+                    android:textAlignment="center"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:id="@+id/hTHR"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="@string/re_water"
+                    android:textAlignment="center"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="12sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:padding="5sp"
+                android:visibility="gone">
+
+                <TextView
+                    android:id="@+id/hvSLM"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="36.2"
+                    android:textAlignment="center"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/tvKg"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/unit_kg"
+                    android:textAlignment="center"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:id="@+id/hSLM"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="@string/re_muscle"
+                    android:textAlignment="center"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="12sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="5sp"
+                android:visibility="gone">
+
+                <TextView
+                    android:id="@+id/hvBMR"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="2200.2"
+                    android:textAlignment="center"
+                    android:textColor="@color/colorBlack" />
+
+                <TextView
+                    android:id="@+id/hBMR"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="@string/re_bmr"
+                    android:textAlignment="center"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="12sp" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+</LinearLayout>

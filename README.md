@@ -1,1 +1,2 @@
-# BtScaleOne1
+# chipsea-ble-lib
+chipsea-ble-lib

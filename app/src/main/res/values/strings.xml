@@ -1,0 +1,163 @@
+<resources>
+    <string name="app_name">Body Scale</string>
+    <string name="app_test_name" translatable="false">Body fat scale disconnection test</string>
+
+    <string name="scanner_action_scan">Search for</string>
+    <string name="scanner_title">Select device:</string>
+    <string name="scanner_action_cancel">Cancel</string>
+    <string name="scanner_empty">No device found</string>
+    <string name="not_available" translatable="false">n/a</string>
+
+    <string name="start_scan">Scanning</string>
+    <string name="disconnect">Disconnect</string>
+    <string name="unbound">Unbind device</string>
+    <string name="not_support_ble">The device does not support BLE！</string>
+
+    <string name="sync_history">Sync history</string>
+    <string name="sync_list">Sync list</string>
+    <string name="sync_user">Sync users</string>
+    <string name="sync_time">Synchronised time</string>
+    <string name="update_user">Update user</string>
+
+    <string name="unit_kg" translatable="false">Kg</string>
+    <string name="unit_lb" translatable="false">Lb</string>
+    <string name="unit_st" translatable="false">Yin</string>
+    <string name="unit_jin" translatable="false">jin</string>
+
+    <string name="male">Male</string>
+    <string name="female">Female</string>
+    <string name="age">Age:</string>
+    <string name="height">Height:</string>
+    <string name="weight">We.:</string>
+    <string name="adc">Imp.:</string>
+
+    <string name="temp">Temp.: %1$d</string>
+    <string name="default_value" translatable="false">--</string>
+    <string name="default_weight">&#8212;</string>
+    <string name="default_temp">Temperature: &#8212;</string>
+
+    <string name="state_connected">Connected device: %1$s</string>
+    <string name="state_bound">Bound device: %1$s</string>
+    <string name="state_disconnected">Has been disconnected from the device</string>
+    <string name="state_service_discovered">Has discovered the service</string>
+    <string name="state_indication_success">Enable success</string>
+    <string name="state_time_out">Connection timeout</string>
+    <string name="state_connecting">Connecting&#8230;</string>
+    <string name="state_error">Abnormal connection, abnormal information: %1$s; error code: %2$d</string>
+    <string name="settings_status">Status: %1$s</string>
+    <string name="normal">Normal</string>
+    <string name="low_power">Low power consumption</string>
+    <string name="low_voltage">Low voltage</string>
+    <string name="error">Overload</string>
+    <string name="time_out">Timeout</string>
+    <string name="unstable">Unstable</string>
+    <string name="set_unit_success">Set the unit successfully</string>
+    <string name="set_unit_failed">Failed to set the unit</string>
+    <string name="set_time_success">Set time success</string>
+    <string name="set_time_failed">Failed to set time</string>
+    <string name="set_user_success">Set user successfully </string>
+    <string name="set_user_failed">Failed to set user </string>
+    <string name="update_user_list_success">Successfully updated the user list</string>
+    <string name="update_user_list_failed">Failed to update user list</string>
+    <string name="update_user_success">Update user successfully</string>
+    <string name="update_user_failed">Failed to update user</string>
+    <string name="no_history">No historical data</string>
+    <string name="history_start_send">Start sending historical data</string>
+    <string name="history_send_over">Historical data transmission completed</string>
+    <string name="no_match_user">No matching users</string>
+    <string name="adc_measured_ind">Impedance measurement</string>
+    <string name="adc_error">Impedance measurement failed</string>
+    <string name="unknown">Unknown</string>
+    <string name="request_disconnect">Bluetooth request to disconnect</string>
+    <string name="set_did_success">UUID set successfully</string>
+    <string name="set_did_failed">Failed to set UUID</string>
+    <string name="data_send_end">Measurement data transmission completed</string>
+
+    <string name="body_fat_data">Body fat data: %1$s</string>
+    <string name="history_data">Historical data: %1$s</string>
+
+    <string name="ble_version">BLE version: %1$s</string>
+    <string name="user_id">user ID: %1$s</string>
+    <string name="mcu_date">Date of measurement: %1$s</string>
+    <string name="mcu_time">Measure time: %1$s</string>
+    <string name="did">UUID: %1$d</string>
+
+    <string name="clear_log">Clear Log</string>
+    <string name="btn_auth">Check</string>
+    <string name="btn_get_decimal">Get decimal places</string>
+
+    <string name="get_version">Get version</string>
+
+    <string name="query_did">Query UUID</string>
+    <string name="set_did">Set UUID</string>
+    <string name="did_error">UUID must be greater than 0 and less than 65536</string>
+    <string name="did_is_null">UUID cannot be empty </string>
+
+    <string name="no_data">Save failed, no data!</string>
+    <string name="save_failed">Save failed</string>
+    <string name="save_ing">Saving&#8230;</string>
+    <string name="save_ing_progress">Saving&#8230;  %1$d</string>
+    <string name="save_success">Saved successfully, path:\nFile Manager-iWeightDemo-%1$s</string>
+    <string name="query">Determine</string>
+    <string name="Device">device</string>
+    <string name="conected">Conected</string>
+    <string name="name_dev">Device:</string>
+    <string name="status">Status:</string>
+    <string name="name">Name:</string>
+    <string name="gender">Gender:</string>
+    <string name="version">Version</string>
+    <string name="bmi" translatable="false">BMI:</string>
+    <string name="default_bmi" translatable="false">BMI: &#8212;</string>
+    <string name="re_weight">Weight</string>
+    <string name="re_fat">Fat</string>
+    <string name="re_water">Body water</string>
+    <string name="re_bones">Bone mass</string>
+    <string name="re_bmi">BMI</string>
+    <string name="re_bfr">BFR</string>
+    <string name="re_muscle">Muscle</string>
+    <string name="re_bmr">Calories</string>
+    <string name="empty_name">Enter name:</string>
+    <string name="enter_nickname">Enter name</string>
+    <string name="cancel">Cancel</string>
+    <string name="enter_height">Enter height</string>
+    <string name="enter_birth">Enter date of birth</string>
+    <string name="history">History</string>
+    <string name="yes">Yes</string>
+    <string name="delete">Delete user</string>
+    <string name="no">No</string>
+    <string name="realy_delete">Really delete?</string>
+    <string name="delete_history">Delete</string>
+    <string name="delete_item">Delete item?</string>
+    <string name="delete_data">Do you want to delete the data?</string>
+    <string name="trend">Trend</string>
+    <string name="user">Users</string>
+    <string name="start_date">Start Date</string>
+    <string name="stop_date">Stop Date</string>
+    <string name="avg">Average:</string>
+    <string name="birthday">Birthday:</string>
+    <string name="units">Units:</string>
+    <string name="calorie" translatable="false">kcal</string>
+    <string name="delete_user_info">Long click on a name for delete user</string>
+    <string name="select_user_info">Click on a name to select a user</string>
+    <string name="detail">Detail</string>
+    <string name="rewrite_user">Rewrite user?</string>
+    <string name="update_usr">Update</string>
+    <string name="about">About</string>
+    <string name="save_done">Backup done</string>
+    <string name="allow_permission">Allow permission</string>
+    <string name="setup_permission">Goto:\\n➙ Settings\\n➙ Apps\\n➙ Body Scale\\n➙ Permissions\\nand allow permission.</string>
+    <string name="recovery_done">Recovery done</string>
+    <string name="destination_db">Folder for backup is: /Download/weighing</string>
+    <string name="save_database">Database backup</string>
+    <string name="recovery_database">Database recovery</string>
+    <string name="whole">Whole</string>
+    <string name="appinfo">"\\tApplication for displaying body data from personal scales.\nCommunicates with Esperanza devices and others with the Chipsea-BLE protocol. Unlike other similar applications, the application has a local database with the possibility of backup. No server registration. "</string>
+    <string name="copyright">2021 Stefan Cizmar</string>
+    <string name="email">Feedback</string>
+    <string name="more">More</string>
+    <string name="insert_text">Insert text.</string>
+    <string name="show_detail">Tap to detail</string>
+    <string name="delete_history_item">Long tap delete item</string>
+    <string name="empty_date">Enter date:</string>
+    <string name="empty_height">Enter height:</string>
+</resources>
