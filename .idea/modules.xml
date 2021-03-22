@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/chipsea-ble-lib-master.iml" filepath="$PROJECT_DIR$/.idea/modules/chipsea-ble-lib-master.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/chipsea-ble-lib-master.app.iml" filepath="$PROJECT_DIR$/.idea/modules/app/chipsea-ble-lib-master.app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/blelib/chipsea-ble-lib-master.blelib.iml" filepath="$PROJECT_DIR$/.idea/modules/blelib/chipsea-ble-lib-master.blelib.iml" />
+    </modules>
+  </component>
+</project>
