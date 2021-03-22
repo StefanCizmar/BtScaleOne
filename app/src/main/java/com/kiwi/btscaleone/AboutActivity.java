@@ -28,8 +28,6 @@ public class AboutActivity   extends AppCompatActivity implements  View.OnClickL
 
     private LinearLayout ll_a;
 
-
-
     private TextView app_version;
     private TextView tv_Info;
     private TextView tv_c;
@@ -91,9 +89,7 @@ public class AboutActivity   extends AppCompatActivity implements  View.OnClickL
                     imScale.setImageResource(R.drawable.esperanza);
                     break;
                 }
-                case Configuration.UI_MODE_NIGHT_YES:
-                    //return true;
-                {
+                case Configuration.UI_MODE_NIGHT_YES:{
                     Log.i("MODE4", " DARK");
 
                     ll_a.setBackgroundResource(R.drawable.shadow_dark);

@@ -2,9 +2,9 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/chipsea-ble-lib-master.iml" filepath="$PROJECT_DIR$/.idea/modules/chipsea-ble-lib-master.iml" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/chipsea-ble-lib-master.app.iml" filepath="$PROJECT_DIR$/.idea/modules/app/chipsea-ble-lib-master.app.iml" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/blelib/chipsea-ble-lib-master.blelib.iml" filepath="$PROJECT_DIR$/.idea/modules/blelib/chipsea-ble-lib-master.blelib.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/BtScaleOne.iml" filepath="$PROJECT_DIR$/.idea/modules/BtScaleOne.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/BtScaleOne.app.iml" filepath="$PROJECT_DIR$/.idea/modules/app/BtScaleOne.app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/blelib/BtScaleOne.blelib.iml" filepath="$PROJECT_DIR$/.idea/modules/blelib/BtScaleOne.blelib.iml" />
     </modules>
   </component>
 </project>
