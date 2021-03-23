@@ -57,7 +57,6 @@ public class AboutActivity   extends AppCompatActivity implements  View.OnClickL
 
         okButton = findViewById(R.id.buttonOk2);
         sendBtn = findViewById(R.id.email_button);
-
         sendBtn.setTransformationMethod(null);
 
         okButton.setOnClickListener(this);
