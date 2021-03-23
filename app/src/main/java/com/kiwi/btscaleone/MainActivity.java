@@ -543,12 +543,7 @@ public class MainActivity extends BleProfileServiceReadyActivity implements Devi
                     }
                 }
                 break;
-            case R.id.action_log:
-                Intent intent =new Intent(this, LogActivity.class);
-
-                startActivity(intent);
-                break;
-            case R.id.action_saveDb:
+           case R.id.action_saveDb:
                 Intent intent2 =new Intent(this, SaveDbActivity.class);
                 startActivity(intent2);
                 break;
@@ -783,7 +778,7 @@ public class MainActivity extends BleProfileServiceReadyActivity implements Devi
         }
 
         /**  SAVE DATA IF IS DATA **/
-        // is data is different
+        // if data is different
 
         /**
         if(different != BleConfig.WEIGHT ) {
@@ -799,6 +794,7 @@ public class MainActivity extends BleProfileServiceReadyActivity implements Devi
     private void setWeighDataText(String weight) {
 
         tv_weight.setText( "" +  weight);
+
         if(different != BleConfig.WEIGHT ) {
             saveResults();
             vibrator.vibrate(250);
