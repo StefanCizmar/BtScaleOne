@@ -388,7 +388,7 @@ public class MainActivity extends BleProfileServiceReadyActivity implements Devi
                     & Configuration.UI_MODE_NIGHT_MASK;
             switch (currentNightMode) {
                 case Configuration.UI_MODE_NIGHT_NO: {
-                    Log.i("MODE4", " LIGHT");
+                    Log.i("MODE ", " LIGHT");
 
                     ll_m1.setBackgroundResource(R.drawable.shadow_light);
                     ll_m2.setBackgroundResource(R.drawable.shadow_light);
@@ -404,7 +404,7 @@ public class MainActivity extends BleProfileServiceReadyActivity implements Devi
                 case Configuration.UI_MODE_NIGHT_YES:
                     //return true;
                 {
-                    Log.i("MODE4", " DARK");
+                    Log.i("MODE ", " DARK");
                     setTheme(R.style.AppTheme2);
 
                     ll_m1.setBackgroundResource(R.drawable.shadow_dark);
