@@ -133,20 +133,28 @@ public class UserActivity   extends AppCompatActivity implements  View.OnClickLi
 
         tv_name2 = findViewById(R.id.etName);
         tv_name2.setOnClickListener(this);
+        tv_name2.setText("");
+        tv_name2.setHint(R.string.empty_name);
 
         tv_name1 = findViewById(R.id.tvName);
         tv_name1.setOnClickListener(this);
+
+
         tv_gender = findViewById(R.id.tvGender);
         tv_age = findViewById(R.id.tvAge);
         tv_height = findViewById(R.id.tvHeight);
 
         ed_height = findViewById(R.id.edHeight);
+        ed_height.setText("");
+        ed_height.setHint(R.string.empty_height);
 
         btn_ok = findViewById(R.id.btOK);
         btn_ok.setOnClickListener(this);
 
         tv_birth = findViewById(R.id.tvBirth);
         tv_birth.setOnClickListener(this);
+        tv_birth.setText("");
+        tv_birth.setHint(R.string.empty_date);
 
         rg_sex = findViewById(R.id.rgSex);
         rg_sex.check(R.id.rbMale);              // default male
@@ -210,6 +218,9 @@ public class UserActivity   extends AppCompatActivity implements  View.OnClickLi
                     rb_male.setTextColor(Color.BLACK);
                     rb_female.setTextColor(Color.BLACK);
 
+                    tv_name2.setHintTextColor(Color.GRAY);
+                    ed_height.setHintTextColor(Color.GRAY);
+                    tv_birth.setHintTextColor(Color.GRAY);
                     break;
                 }
                 case Configuration.UI_MODE_NIGHT_YES:
@@ -231,7 +242,9 @@ public class UserActivity   extends AppCompatActivity implements  View.OnClickLi
                     rb_male.setTextColor(Color.WHITE);
                     rb_female.setTextColor(Color.WHITE);
 
-
+                    tv_name2.setHintTextColor(Color.GRAY);
+                    ed_height.setHintTextColor(Color.GRAY);
+                    tv_birth.setHintTextColor(Color.GRAY);
 
 
                     break;

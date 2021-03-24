@@ -236,7 +236,8 @@
                                 android:inputType="numberSigned"
                                 android:paddingStart="5sp"
                                 android:text="@string/empty_height"
-                                android:textColor="@color/colorBlack" />
+                                android:textColor="@color/colorBlack"
+                                android:textSize="14sp" />
 
                         </TableRow>
 
