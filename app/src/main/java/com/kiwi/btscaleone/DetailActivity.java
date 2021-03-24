@@ -151,12 +151,12 @@ public class DetailActivity extends AppCompatActivity {
         slm = getIntent().getStringExtra("SLM");
         thr = getIntent().getStringExtra("THR");
 
-        tv_weight.setText(weight + "Kg");
+        tv_weight.setText(String.format("%s Kg", weight));
         tv_bmi.setText(bmi);
-        tv_bfr.setText(bfr + "%");
-        tv_bmr.setText(bmr + "Kcal");
-        tv_slm.setText(slm + "Kg");
-        tv_thr.setText(thr + "%");
+        tv_bfr.setText(String.format("%s %%", bfr));
+        tv_bmr.setText(String.format("%s Kcal", bmr));
+        tv_slm.setText(String.format("%s Kg", slm));
+        tv_thr.setText(String.format("%s %%", thr));
 
     }
 

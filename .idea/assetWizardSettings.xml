@@ -37,7 +37,7 @@
                                             <option name="values">
                                               <map>
                                                 <entry key="color" value="000000" />
-                                                <entry key="imagePath" value="$PROJECT_DIR$/../SCALE/icons/bt_off.png" />
+                                                <entry key="imagePath" value="$USER_HOME$/Plocha/HEARTRATE/icons/strip.png" />
                                                 <entry key="opacityPercent" value="60" />
                                                 <entry key="paddingPercent" value="5" />
                                               </map>
@@ -72,7 +72,7 @@
                                   <option name="values">
                                     <map>
                                       <entry key="assetType" value="IMAGE" />
-                                      <entry key="imageAsset" value="$PROJECT_DIR$/../SCALE/icons/bt_off.png" />
+                                      <entry key="imageAsset" value="$USER_HOME$/Plocha/HEARTRATE/icons/strip.png" />
                                       <entry key="outputName" value="ic_bt_on" />
                                       <entry key="themeColor" value="ffe668" />
                                     </map>
@@ -90,6 +90,7 @@
                                           <PersistentState>
                                             <option name="values">
                                               <map>
+                                                <entry key="color" value="000000" />
                                                 <entry key="imagePath" value="/tmp/ic_android_black_24dp.xml" />
                                               </map>
                                             </option>
@@ -102,7 +103,7 @@
                                             <option name="values">
                                               <map>
                                                 <entry key="color" value="000000" />
-                                                <entry key="imagePath" value="$PROJECT_DIR$/../alert.png" />
+                                                <entry key="imagePath" value="$USER_HOME$/Plocha/HEARTRATE/icons/strip.png" />
                                                 <entry key="scalingPercent" value="53" />
                                               </map>
                                             </option>

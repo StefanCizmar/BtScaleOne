@@ -27,14 +27,17 @@ import java.util.List;
 
 public class DeviceDialog extends Dialog {
 
-    private DeviceListAdapter adapter;
     private Button scanButton;
     private ImageView lvAni;
+
+    private DeviceListAdapter adapter;
+    private ListView devList;
+
     private Context context;
     private OnDeviceScanListener listener;
     private boolean scanning;
     private List<BroadData> listValues;
-    private ListView listView;
+
     private final BroadData.AddressComparator comparator = new BroadData.AddressComparator();
 
     private String addr;
@@ -81,22 +84,25 @@ public class DeviceDialog extends Dialog {
         addr = pref.getString("Address", "0");  //"" is the default value.
 
         if(!addr.equalsIgnoreCase("0")) {
-            listView.setVisibility(View.INVISIBLE);
+            devList.setVisibility(View.INVISIBLE);
             scanButton.setVisibility(View.INVISIBLE);
+            lvAni.setVisibility(View.INVISIBLE);
+
         }
     }
 
     private void initEvents() {
-        listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+
+        devList.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(final AdapterView<?> parent, final View view, final int position, final long id) {
                 stopScanDevice();
+
                 dismiss();
                 listener.connect((BroadData) adapter.getItem(position));
 
             }
         });
-
 
         scanButton.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -114,9 +120,9 @@ public class DeviceDialog extends Dialog {
     }
 
     private void initViews() {
-        listView = findViewById(android.R.id.list);
+        devList = findViewById(android.R.id.list);
         adapter = new DeviceListAdapter(context, listValues);
-        listView.setAdapter(adapter);
+        devList.setAdapter(adapter);
         scanButton = findViewById(R.id.action_cancel);
         lvAni = findViewById(R.id.ivAnimation);
 
@@ -127,6 +133,7 @@ public class DeviceDialog extends Dialog {
     private Handler handler = new Handler();
 
     public void startScan() {
+
         clearDevices();
         TextView textView = findViewById(android.R.id.empty);
         textView.setVisibility(View.GONE);
@@ -155,6 +162,7 @@ public class DeviceDialog extends Dialog {
     }
 
     public void setDevice(BroadData device) {
+
         comparator.address = device.getAddress();
         final int index = listValues.indexOf(comparator);
         if (index >= 0) {

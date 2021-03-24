@@ -166,7 +166,8 @@
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:text="@string/gender"
-                                android:textColor="@color/colorBlack" />
+                                android:textColor="@color/colorBlack"
+                                android:textSize="18sp" />
 
                             <RadioGroup
                                 android:id="@+id/rgSex"
@@ -204,7 +205,8 @@
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:text="@string/birthday"
-                                android:textColor="@color/colorBlack" />
+                                android:textColor="@color/colorBlack"
+                                android:textSize="18sp" />
 
                             <TextView
                                 android:id="@+id/tvBirth"
@@ -226,7 +228,8 @@
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:text="@string/height"
-                                android:textColor="@color/colorBlack" />
+                                android:textColor="@color/colorBlack"
+                                android:textSize="18sp" />
 
                             <EditText
                                 android:id="@+id/edHeight"

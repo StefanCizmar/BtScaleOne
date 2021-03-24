@@ -66,34 +66,38 @@ public class ResultListAdapter extends ArrayAdapter {
         /** WEIGHT kg**/
         if(position == 1) {
             tvalue[position] = String.valueOf(BleConfig.WEIGHT);
-            value.setText(tvalue[position] + "Kg");
+            value.setText(String.format("%s Kg", tvalue[position]));
             result.setText(context.getString(R.string.re_weight));
 
         }
         /** BFR percent **/
         if(position == 2) {
             tvalue[position] = String.valueOf(BleConfig.BFR);
-            value.setText(tvalue[position]+ "%");
+            value.setText(String.format("%s %%", tvalue[position]));
             result.setText(context.getString(R.string.re_fat) );
         }
         /** WATER percent **/
         if(position == 3) {
             tvalue[position] = String.valueOf(BleConfig.TFR);
-            value.setText(tvalue[position]+ "%");
+            value.setText(String.format("%s %%", tvalue[position]));
             result.setText(context.getString(R.string.re_water) );
 
         }
         /** BMR calorie **/
         if(position == 4) {
             tvalue[position] = String.valueOf(BleConfig.BMR);
-            value.setText(tvalue[position] + "kcal");
+            int b;
+            b = (int) BleConfig.BMR;
+
+            tvalue[position] = String.valueOf( b  );
+            value.setText(String.format("%s kcal", tvalue[position]));
             result.setText(context.getString(R.string.re_bmr));
 
         }
         /** SLM kg **/
         if(position == 5) {
             tvalue[position] = String.valueOf(BleConfig.SLM);
-            value.setText(tvalue[position]+ "Kg");
+            value.setText(String.format("%s Kg", tvalue[position]));
             result.setText(context.getString(R.string.re_muscle) );
 
         }

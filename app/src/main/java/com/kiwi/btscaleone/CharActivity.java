@@ -162,19 +162,7 @@ public class CharActivity extends AppCompatActivity implements View.OnClickListe
         sCol = getResources().getColor(R.color.colorWeight);
 
 
-        ivChar = findViewById(R.id.viewChar);
 
-        ivChar.post(new Runnable() {
-            @Override
-            public void run() {
-                Width = ivChar.getWidth();
-                Height = ivChar.getHeight();
-
-
-
-                drawChar();
-            }
-        });
 
         // navigation buttons
         btn_main = findViewById(R.id.ibMain);
@@ -216,7 +204,7 @@ public class CharActivity extends AppCompatActivity implements View.OnClickListe
                     & Configuration.UI_MODE_NIGHT_MASK;
             switch (currentNightMode) {
                 case Configuration.UI_MODE_NIGHT_NO: {
-                    Log.i("MODE4", " LIGHT");
+                    Log.i("MODE ", " LIGHT");
                     night = false;
                     ll_t1.setBackgroundResource(R.drawable.shadow_light);
                     ll_t2.setBackgroundResource(R.drawable.shadow_light);
@@ -227,7 +215,7 @@ public class CharActivity extends AppCompatActivity implements View.OnClickListe
                 case Configuration.UI_MODE_NIGHT_YES:
                     //return true;
                 {
-                    Log.i("MODE4", " DARK");
+                    Log.i("MODE ", " DARK");
                     night = true;
                     ll_t1.setBackgroundResource(R.drawable.shadow_dark);
                     ll_t2.setBackgroundResource(R.drawable.shadow_dark);
@@ -241,7 +229,19 @@ public class CharActivity extends AppCompatActivity implements View.OnClickListe
                 }
             }
         }
+        ivChar = findViewById(R.id.viewChar);
 
+        ivChar.post(new Runnable() {
+            @Override
+            public void run() {
+                Width = ivChar.getWidth();
+                Height = ivChar.getHeight();
+
+
+
+                drawChar();
+            }
+        });
 
     }
 
@@ -277,7 +277,10 @@ public class CharActivity extends AppCompatActivity implements View.OnClickListe
         if(!night) {
             pFrame.setColor(Color.BLACK);
         }
-        else pFrame.setColor(Color.WHITE);
+        if(night) {
+            pFrame.setColor(Color.WHITE);
+        }
+
         pFrame.setStyle(Paint.Style.STROKE);
         pFrame.setStrokeWidth(2);
 
@@ -289,7 +292,12 @@ public class CharActivity extends AppCompatActivity implements View.OnClickListe
         if(!night) {
             scaleXY.setColor(Color.BLACK);
         }
-        else scaleXY.setColor(Color.WHITE);
+
+        if(night) {
+            // gray color xiaomi redmi note ing. Brzy ROM
+            scaleXY.setColor(Color.GRAY);
+        }
+
         scaleXY.setStyle(Paint.Style.STROKE);
         scaleXY.setStrokeWidth(2);
 
@@ -302,7 +310,7 @@ public class CharActivity extends AppCompatActivity implements View.OnClickListe
         if(!night) {
             pText.setColor(Color.BLACK);
         }
-        else pText.setColor(Color.WHITE);
+        else pText.setColor(Color.GRAY);    // gray color xiaomi redmi note ing. Brzy ROM
         pText.setStyle(Paint.Style.FILL);
         pText.setStrokeWidth(2);
 
