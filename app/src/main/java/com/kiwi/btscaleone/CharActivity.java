@@ -40,7 +40,7 @@ public class CharActivity extends AppCompatActivity implements View.OnClickListe
     private Toolbar toolbar;
     private DatePickerDialog StartTime;
     private final static String TAG = "TREND";
-
+    ActionBar supportActionBar;
     // navigation button
     private  ImageView btn_main;
     private  ImageView btn_user;
@@ -150,9 +150,11 @@ public class CharActivity extends AppCompatActivity implements View.OnClickListe
 
         toolbar = findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
-        ActionBar supportActionBar = getSupportActionBar();
+        supportActionBar = getSupportActionBar();
         if (supportActionBar != null) {
-            supportActionBar.setTitle(R.string.trend);
+            //String concatenate  = getString(R.string.trend) + " - " + getString(R.string.re_weight);
+
+            supportActionBar.setTitle(getString(R.string.trend) + " - " + getString(R.string.re_weight)) ;
             //supportActionBar.setDisplayHomeAsUpEnabled(true);
         }
 
@@ -718,7 +720,7 @@ public class CharActivity extends AppCompatActivity implements View.OnClickListe
             btn_slm.setImageResource(R.drawable.re_muscle);
             btn_thr.setImageResource(R.drawable.re_water);
             btn_bmr.setImageResource(R.drawable.re_calorie);
-
+            supportActionBar.setTitle(getString(R.string.trend) + " - " + getString(R.string.re_weight)) ;
 
             drawChar();
 
@@ -741,7 +743,7 @@ public class CharActivity extends AppCompatActivity implements View.OnClickListe
             btn_slm.setImageResource(R.drawable.re_muscle);
             btn_thr.setImageResource(R.drawable.re_water);
             btn_bmr.setImageResource(R.drawable.re_calorie);
-
+            supportActionBar.setTitle(getString(R.string.trend) + " - " + getString(R.string.re_bmi)) ;
 
             drawChar();
             Log.i(TAG,""+ sD);
@@ -758,7 +760,7 @@ public class CharActivity extends AppCompatActivity implements View.OnClickListe
             btn_slm.setImageResource(R.drawable.re_muscle);
             btn_thr.setImageResource(R.drawable.re_water);
             btn_bmr.setImageResource(R.drawable.re_calorie);
-
+            supportActionBar.setTitle(getString(R.string.trend) + " - " + getString(R.string.re_fat)) ;
 
             drawChar();
 
@@ -776,7 +778,7 @@ public class CharActivity extends AppCompatActivity implements View.OnClickListe
             btn_slm.setImageResource(R.drawable.reo_muscle);
             btn_thr.setImageResource(R.drawable.re_water);
             btn_bmr.setImageResource(R.drawable.re_calorie);
-
+            supportActionBar.setTitle(getString(R.string.trend) + " - " + getString(R.string.re_muscle)) ;
 
             drawChar();
 
@@ -794,7 +796,7 @@ public class CharActivity extends AppCompatActivity implements View.OnClickListe
             btn_slm.setImageResource(R.drawable.re_muscle);
             btn_thr.setImageResource(R.drawable.reo_water);
             btn_bmr.setImageResource(R.drawable.re_calorie);
-
+            supportActionBar.setTitle(getString(R.string.trend) + " - " + getString(R.string.re_water)) ;
 
             drawChar();
 
@@ -812,7 +814,7 @@ public class CharActivity extends AppCompatActivity implements View.OnClickListe
             btn_slm.setImageResource(R.drawable.re_muscle);
             btn_thr.setImageResource(R.drawable.re_water);
             btn_bmr.setImageResource(R.drawable.reo_calorie);
-
+            supportActionBar.setTitle(getString(R.string.trend) + " - " + getString(R.string.re_bmr)) ;
             drawChar();
 
             Log.i(TAG,""+ selD);
