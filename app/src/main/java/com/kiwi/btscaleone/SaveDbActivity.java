@@ -228,7 +228,7 @@ public class SaveDbActivity   extends AppCompatActivity implements View.OnClickL
             File sd = Environment.getExternalStoragePublicDirectory(Environment.DIRECTORY_DOWNLOADS);
             File data = Environment.getDataDirectory();
 
-            if (sd.canWrite()) {
+            if (sd.canRead()) {
                 String currentDBPath = "/data/" + "com.kiwi.btscaleone" + "/databases/" + DATABASE_NAME;
                 String backupDBPath =  DATABASE_NAME;
                 final File currentDB = new File(data, currentDBPath);
