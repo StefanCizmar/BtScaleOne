@@ -1,9 +1,10 @@
 package com.chipsea.scandecoder;
 
 import android.os.ParcelUuid;
-import android.support.annotation.Nullable;
 import android.util.Log;
 import android.util.SparseArray;
+
+import androidx.annotation.Nullable;
 
 import java.util.ArrayList;
 import java.util.Arrays;

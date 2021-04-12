@@ -15,16 +15,20 @@ import android.graphics.Path;
 import android.graphics.RectF;
 import android.os.Build;
 import android.os.Bundle;
-import android.support.v7.app.ActionBar;
-import android.support.v7.app.AppCompatActivity;
-import android.support.v7.widget.Toolbar;
+
 import android.util.Log;
+import android.view.Display;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.MotionEvent;
 import android.view.View;
 import android.widget.DatePicker;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
+
+import androidx.appcompat.app.ActionBar;
+import androidx.appcompat.app.AppCompatActivity;
+import androidx.appcompat.widget.Toolbar;
 
 import java.text.DecimalFormat;
 import java.text.DecimalFormatSymbols;
@@ -34,7 +38,7 @@ import java.util.StringTokenizer;
 
 import static java.util.Collections.min;
 
-public class CharActivity extends AppCompatActivity implements View.OnClickListener{
+public class CharActivity extends AppCompatActivity implements View.OnClickListener, View.OnTouchListener {
 
     private Menu menu;
     private Toolbar toolbar;
@@ -131,10 +135,21 @@ public class CharActivity extends AppCompatActivity implements View.OnClickListe
     private Bitmap bitmap;
     private Canvas canvas;
 
+    boolean move = false;
+
+    float x1;
+    float x2;
+    float y1;
+    float y2;
+
     Paint pFrame = new Paint(Paint.ANTI_ALIAS_FLAG);
     Paint scaleXY = new Paint(Paint.ANTI_ALIAS_FLAG);
     Paint pDot = new Paint(Paint.ANTI_ALIAS_FLAG);
     Paint pText = new Paint(Paint.ANTI_ALIAS_FLAG);
+
+    Paint pMText = new Paint(Paint.ANTI_ALIAS_FLAG);
+
+
     Paint pLine = new Paint(Paint.ANTI_ALIAS_FLAG);
 
     //String part[] = new String[] {  };
@@ -200,6 +215,7 @@ public class CharActivity extends AppCompatActivity implements View.OnClickListe
         ll_t1 = findViewById(R.id.ll_t1);
         ll_t2 = findViewById(R.id.ll_t2);
         vChart = findViewById(R.id.viewChar);
+        vChart.setOnTouchListener(this);
 
         if(Build.VERSION.SDK_INT >= 29) {
             int currentNightMode = this.getResources().getConfiguration().uiMode
@@ -315,9 +331,18 @@ public class CharActivity extends AppCompatActivity implements View.OnClickListe
         else pText.setColor(Color.GRAY);    // gray color xiaomi redmi note ing. Brzy ROM
         pText.setStyle(Paint.Style.FILL);
         pText.setStrokeWidth(2);
-
-
         pText.setTextSize(tSize);
+
+        if(!night) {
+            pMText.setColor(Color.BLACK);
+        }
+        else pMText.setColor(Color.GRAY);    // gray color xiaomi redmi note ing. Brzy ROM
+        pMText.setStyle(Paint.Style.FILL);
+        pMText.setStrokeWidth(2);
+        pMText.setTextSize(tSize);
+
+
+
         int xStart = 0 ;
 
         if(sWeight.size() >  0 && sWeight.size() <  11) {
@@ -335,6 +360,34 @@ public class CharActivity extends AppCompatActivity implements View.OnClickListe
                 canvas.drawText(String.valueOf(part4), xStart, Height - 30, pText);
             }
         }
+
+        if(move) {
+            float position = x2;
+            position = position / stepX;
+
+            if(position < 0 ) position = 0;
+            if(position > sD.size() ) position = sD.size() - 0;
+
+
+            if(x2 > Width * 2/3) {
+                pMText.setTextAlign(Paint.Align.RIGHT);
+                canvas.drawText("" + " " + String.valueOf(sD.get((int) position )), x2 - 20, tSize + 40, pMText);
+
+                //canvas.drawText("" + "Value" , x2 - 20, 2 * tSize + 10, pMText);
+            }
+            else {
+                pMText.setTextAlign(Paint.Align.LEFT);
+                canvas.drawText("" + " " + String.valueOf(sD.get((int) position )), x2 + 40, tSize + 40, pMText);
+
+                //canvas.drawText("" + "Value" , x2 + 40, 2 * tSize + 10, pMText);
+            }
+            if(x2 <= 20) x2 = 20;
+            if(x2 >= Width - 20) x2 = Width - 20;
+
+            canvas.drawLine( x2 + 20,20, x2 + 20, Height - 20, scaleXY);
+        }
+
+
 
         /** DRAW DOTS, TEXTS, LINES **/
         // draw if arrays is not empty
@@ -849,6 +902,34 @@ public class CharActivity extends AppCompatActivity implements View.OnClickListe
     }
 
 
+    @Override
+    public boolean onTouch(View v, MotionEvent event) {
+        Display display = getWindowManager().getDefaultDisplay();
+        @SuppressWarnings("deprecation")
+        int width = display.getWidth();
+
+        Log.e("Move", "width "+ width);
+        switch (event.getAction()) {
+
+            case MotionEvent.ACTION_DOWN:
+                x1 = event.getX();
+                y1 = event.getY();
+                Log.e(TAG, "DOWN " + x1 + " " + y1);
+                return true;
+            case MotionEvent.ACTION_MOVE:
+                x2 = event.getX();
+                y2 = event.getY();
+                move = true;
+                drawChar();
+                return true;
+            case MotionEvent.ACTION_UP:
+                move = false;
+                drawChar();
+                return true;
+        }
 
 
+
+        return false;
+    }
 }

@@ -13,9 +13,11 @@ import android.content.pm.PackageManager;
 import android.os.Bundle;
 import android.os.Handler;
 import android.os.IBinder;
-import android.support.annotation.RequiresPermission;
-import android.support.v7.app.AppCompatActivity;
+
 import android.text.TextUtils;
+
+import androidx.annotation.RequiresPermission;
+import androidx.appcompat.app.AppCompatActivity;
 
 import com.chipsea.entity.BodyFatData;
 import com.chipsea.entity.BroadData;
